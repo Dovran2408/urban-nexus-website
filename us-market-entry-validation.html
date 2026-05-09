@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>US Market Entry Validation for Manufacturers &amp; Exporters | Urban Nexus</title>
+<meta content="Urban Nexus helps manufacturers and exporters validate US market demand, pricing, buyer logic, and channel risk before investing in US market entry execution." name="description"/>
+<link href="https://urbannexus.ai/us-market-entry-validation" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<meta content="US Market Entry Validation for Manufacturers &amp; Exporters | Urban Nexus" property="og:title"/>
+<meta content="Validate demand, pricing, buyer logic, and channel risk before investing in US market execution." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://urbannexus.ai/us-market-entry-validation" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Urban Nexus",
+    "url": "https://urbannexus.ai",
+    "description": "Validation-first US market entry system for manufacturers, exporters, and international companies.",
+    "areaServed": {"@type": "Country", "name": "United States"},
+    "serviceType": [
+      "US Market Entry Validation",
+      "Market Validation",
+      "Demand Validation",
+      "Pricing Validation",
+      "Go-to-Market Validation",
+      "Sales Execution Strategy"
+    ]
+  }
+  </script>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is US market entry validation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "US market entry validation is a structured process used to test demand, pricing, buyer logic, and channel risk before a company commits budget to US market execution."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Urban Nexus built for?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Urban Nexus is built for manufacturers, exporters, and international companies entering or expanding in the US market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why validate before execution?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Validation helps reduce the risk of committing budget to the wrong customer segment, pricing model, buyer logic, or market entry channel."
+        }
+      }
+    ]
+  }
+  </script>
+<style>
+    :root {
+      --dark-bg: #050506;
+      --dark-bg-2: #0B0B0C;
+      --dark-text: #FFFFFF;
+      --dark-muted: #A1A1AA;
+      --dark-soft: #71717A;
+      --light-bg: #FFFFFF;
+      --light-soft-bg: #F6F7F9;
+      --light-text: #0B0B0C;
+      --light-muted: #5F636B;
+      --light-border: #E5E7EB;
+      --light-border-strong: #D6DAE1;
+      --accent: #4F46E5;
+      --accent-hover: #4338CA;
+      --accent-soft: rgba(79,70,229,0.08);
+      --container: 1200px;
+      --radius: 24px;
+      --shadow-card: 0 12px 34px rgba(15,23,42,0.04);
+      --shadow-soft: 0 18px 52px rgba(15,23,42,0.06);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--light-bg);
+      color: var(--light-text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Segoe UI", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    p, h1, h2, h3 { margin: 0; }
+
+    .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 40px; }
+
+    .header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(5,5,6,0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: var(--dark-text);
+    }
+    .header-inner { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .logo { font-size: 13px; font-weight: 760; letter-spacing: 0.16em; white-space: nowrap; }
+    .nav { display: flex; align-items: center; gap: 24px; font-size: 13px; color: var(--dark-muted); }
+    .nav a:hover { color: var(--dark-text); }
+
+    .btn {
+      min-height: 52px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 999px; padding: 0 24px;
+      border: 1px solid transparent;
+      font-size: 14px; font-weight: 700; line-height: 1;
+      transition: 180ms ease; white-space: nowrap; cursor: pointer;
+    }
+    .btn-primary { background: var(--accent); color: #FFFFFF; box-shadow: 0 12px 30px rgba(79,70,229,0.24); }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-secondary-dark { color: var(--dark-text); border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.04); }
+    .btn-secondary-dark:hover { border-color: rgba(255,255,255,0.36); background: rgba(255,255,255,0.07); transform: translateY(-1px); }
+
+    .hero {
+      min-height: calc(100vh - 72px);
+      padding: 108px 0 96px;
+      display: flex; align-items: center;
+      color: var(--dark-text);
+      background:
+        radial-gradient(circle at 82% 8%, rgba(79,70,229,0.18), transparent 25%),
+        radial-gradient(circle at 18% 24%, rgba(255,255,255,0.055), transparent 20%),
+        linear-gradient(180deg, var(--dark-bg) 0%, var(--dark-bg-2) 100%);
+    }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 710px) minmax(360px, 460px); gap: 72px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px; padding: 9px 14px;
+      color: var(--dark-muted); font-size: 12px; font-weight: 720;
+      margin-bottom: 30px; background: rgba(255,255,255,0.035);
+    }
+    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 0 5px rgba(79,70,229,0.16); }
+    h1 { max-width: 780px; font-size: clamp(46px, 5vw, 72px); line-height: 0.98; letter-spacing: -0.066em; font-weight: 760; }
+    .hero .subtext { max-width: 680px; margin-top: 26px; color: var(--dark-muted); font-size: 21px; line-height: 32px; letter-spacing: -0.015em; }
+    .urgency-line { margin-top: 20px; max-width: 650px; color: #FFFFFF; font-size: 17px; line-height: 27px; font-weight: 720; letter-spacing: -0.01em; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+
+    .entry-hook { margin-top: 40px; max-width: 690px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); border-radius: 22px; padding: 22px; }
+    .entry-title { color: #FFFFFF; font-size: 15px; line-height: 22px; font-weight: 760; }
+    .entry-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+    .entry-item { min-height: 76px; display: flex; align-items: center; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.18); border-radius: 16px; padding: 14px; color: var(--dark-muted); font-size: 13px; line-height: 19px; font-weight: 650; }
+
+    .system-panel { position: relative; border: 1px solid rgba(255,255,255,0.12); background: linear-gradient(180deg, rgba(19,19,22,0.98), rgba(10,10,12,0.98)); border-radius: 28px; padding: 30px; box-shadow: 0 30px 90px rgba(0,0,0,0.45); overflow: hidden; }
+    .system-panel::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 34px 34px; mask-image: linear-gradient(to bottom, black, transparent 74%); pointer-events: none; }
+    .panel-content { position: relative; z-index: 1; }
+    .panel-kicker { color: var(--dark-soft); font-size: 12px; font-weight: 760; letter-spacing: 0.13em; text-transform: uppercase; }
+    .panel-title { margin-top: 12px; font-size: 28px; line-height: 34px; letter-spacing: -0.04em; font-weight: 740; }
+    .decision-flow { margin-top: 30px; display: grid; gap: 12px; }
+    .flow-row { display: grid; grid-template-columns: 1fr; align-items: center; gap: 14px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.24); border-radius: 16px; padding: 14px; }
+    .flow-title { color: var(--dark-text); font-size: 15px; font-weight: 720; line-height: 20px; }
+    .flow-desc { margin-top: 3px; color: var(--dark-muted); font-size: 13px; line-height: 18px; }
+    .panel-lock { margin-top: 22px; border-left: 2px solid var(--accent); background: rgba(79,70,229,0.12); border-radius: 0 16px 16px 0; padding: 17px 20px; color: var(--dark-text); font-size: 15px; line-height: 24px; font-weight: 680; }
+
+    .section { padding: 104px 0; background: var(--light-bg); border-top: 1px solid var(--light-border); }
+    .section.soft { background: var(--light-soft-bg); }
+    .section-label { color: var(--accent); font-size: 13px; line-height: 18px; font-weight: 780; margin-bottom: 20px; }
+    h2 { max-width: 860px; color: var(--light-text); font-size: clamp(34px, 4vw, 52px); line-height: 1.04; letter-spacing: -0.06em; font-weight: 730; }
+    h3 { color: var(--light-text); font-size: 22px; line-height: 30px; letter-spacing: -0.035em; font-weight: 720; }
+    .body-copy { max-width: 780px; margin-top: 24px; color: var(--light-muted); font-size: 19px; line-height: 31px; letter-spacing: -0.015em; }
+    .body-copy p + p { margin-top: 18px; }
+    .split-grid { display: grid; grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr); gap: 74px; align-items: start; }
+    .card-grid, .seo-keyword-strip, .mechanism-grid, .expectation-grid { display: grid; gap: 16px; }
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+    .seo-keyword-strip { grid-template-columns: repeat(4, 1fr); margin-top: 36px; }
+    .mechanism-grid { grid-template-columns: repeat(4, 1fr); margin-top: 42px; }
+    .expectation-grid { grid-template-columns: repeat(3, 1fr); margin-top: 42px; }
+
+    .card, .seo-keyword, .mechanism-card, .expectation-card, .faq-item {
+      background: #FFFFFF; border: 1px solid var(--light-border); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow-card);
+    }
+    .card p, .mechanism-card p, .expectation-card p, .faq-item p { margin-top: 10px; color: var(--light-muted); font-size: 16px; line-height: 26px; }
+    .seo-keyword { text-align: center; font-weight: 700; font-size: 15px; line-height: 22px; }
+    .principle { margin-top: 32px; max-width: 760px; border-left: 3px solid var(--accent); padding-left: 24px; color: var(--light-text); font-size: 26px; line-height: 36px; letter-spacing: -0.04em; font-weight: 760; }
+    .company-panel { border: 1px solid var(--light-border); background: #FFFFFF; border-radius: 30px; padding: 38px; box-shadow: var(--shadow-soft); }
+    .company-lock { margin-top: 26px; background: var(--accent-soft); border: 1px solid rgba(79,70,229,0.18); border-radius: 20px; padding: 22px; color: var(--light-text); font-size: 18px; line-height: 28px; font-weight: 700; }
+
+    .process-list { margin-top: 36px; display: grid; gap: 16px; }
+    .process-item { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 28px; background: #FFFFFF; border: 1px solid var(--light-border); border-radius: 24px; box-shadow: var(--shadow-card); }
+    .process-item p { margin-top: 8px; color: var(--light-muted); font-size: 16px; line-height: 26px; }
+    .rule-box { margin-top: 16px; padding: 28px; background: #111114; color: #FFFFFF; border-radius: 24px; font-size: 20px; line-height: 30px; font-weight: 760; letter-spacing: -0.03em; }
+
+    .dark-section { background: var(--dark-bg); color: var(--dark-text); border-top: 0; }
+    .dark-section .section-label { color: #C7C3FF; text-align: center; }
+    .dark-section h2 { color: #FFFFFF; margin: 0 auto; text-align: center; }
+    .decision-intro { max-width: 680px; margin: 18px auto 0; color: var(--dark-muted); font-size: 18px; line-height: 28px; text-align: center; }
+    .decision-wrap { max-width: 1050px; margin: 0 auto; }
+    .decision-headings, .decision-columns, .pressure-cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .decision-headings { margin-top: 46px; text-align: center; }
+    .decision-columns { margin-top: 18px; }
+    .pressure-cards-row { grid-template-columns: repeat(3, 1fr); margin-top: 38px; gap: 14px; }
+    .decision-head, .decision-box, .pressure-card, .forced-choice { border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.035); border-radius: 18px; }
+    .decision-head { padding: 18px; font-weight: 720; font-size: 18px; line-height: 26px; }
+    .risk-head, .decision-box { color: #8A8A93; }
+    .control-head, .decision-box.control { color: #FFFFFF; border-color: rgba(79,70,229,0.52); background: rgba(79,70,229,0.09); }
+    .decision-column { display: grid; gap: 12px; }
+    .decision-box { padding: 17px 16px; text-align: center; font-size: 15px; line-height: 22px; font-weight: 680; }
+    .forced-choice { max-width: 780px; margin: 44px auto 0; padding: 28px; text-align: center; }
+    .forced-choice-main { font-size: 24px; line-height: 34px; font-weight: 760; letter-spacing: -0.04em; }
+    .pressure-card { min-height: 112px; display: flex; align-items: center; justify-content: center; padding: 20px; color: #FFFFFF; font-size: 15px; line-height: 23px; font-weight: 680; text-align: center; }
+    .reality-lock { max-width: 760px; margin: 36px auto 0; border: 1px solid rgba(79,70,229,0.44); background: rgba(79,70,229,0.1); border-radius: 24px; padding: 24px 28px; text-align: center; color: #FFFFFF; font-size: 22px; line-height: 32px; font-weight: 750; letter-spacing: -0.035em; }
+    .closing-truth { max-width: 840px; margin: 44px auto 0; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 34px; text-align: center; color: #FFFFFF; font-size: 31px; line-height: 40px; font-weight: 780; letter-spacing: -0.06em; }
+
+    .faq-grid { display: grid; gap: 14px; margin-top: 42px; }
+
+    .cta-section { text-align: center; background: linear-gradient(180deg, #FFFFFF 0%, #F6F7F9 100%); }
+    .cta-section h2, .cta-section .body-copy { margin-left: auto; margin-right: auto; }
+    .cta-panel { max-width: 920px; margin: 0 auto; border: 1px solid var(--light-border); background: #FFFFFF; border-radius: 34px; padding: 58px 44px; box-shadow: 0 24px 70px rgba(15,23,42,0.07); }
+
+    .lead-form { margin-top: 34px; display: grid; gap: 12px; text-align: left; }
+    .lead-form input, .lead-form textarea, .lead-form select {
+      width: 100%; min-height: 52px; border: 1px solid var(--light-border-strong); border-radius: 16px; padding: 14px 16px; font-family: inherit; font-size: 15px; color: var(--light-text); background: #FFFFFF; outline: none;
+    }
+    .lead-form textarea { min-height: 120px; resize: vertical; }
+    .lead-form input:focus, .lead-form textarea:focus, .lead-form select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(79,70,229,0.10); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-note, .privacy-note { color: var(--light-muted); font-size: 13px; line-height: 20px; text-align: center; margin-top: 10px; }
+    .privacy-note a { color: var(--light-text); text-decoration: underline; text-underline-offset: 3px; }
+    .form-status { min-height: 22px; color: var(--light-muted); font-size: 14px; line-height: 22px; text-align: center; }
+
+    .footer { padding: 64px 0 32px; background: #050506; color: #FFFFFF; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: start; }
+    .footer-links, .footer-contact { color: var(--dark-muted); font-size: 14px; line-height: 29px; }
+    .footer-contact { text-align: right; }
+    .copyright { margin-top: 54px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.09); text-align: center; color: #73737A; font-size: 12px; }
+
+    @media (max-width: 1080px) {
+      .hero-grid, .split-grid { grid-template-columns: 1fr; }
+      .system-panel { max-width: 620px; }
+      .mechanism-grid, .seo-keyword-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 860px) {
+      .nav { display: none; }
+      .card-grid, .seo-keyword-strip, .mechanism-grid, .expectation-grid, .decision-headings, .decision-columns, .pressure-cards-row, .entry-grid, .form-grid, .footer-grid { grid-template-columns: 1fr; }
+      .footer-contact { text-align: left; }
+    }
+    @media (max-width: 680px) {
+      .container { padding: 0 18px; }
+      .header-inner { height: 66px; }
+      .header .btn { min-height: 42px; padding: 0 16px; font-size: 13px; }
+      .hero { min-height: auto; padding: 74px 0 70px; }
+      .hero-grid { gap: 46px; }
+      h1 { font-size: 42px; line-height: 44px; }
+      .hero .subtext { font-size: 18px; line-height: 28px; }
+      .section { padding: 72px 0; }
+      h2 { font-size: 34px; line-height: 38px; }
+      .body-copy { font-size: 17px; line-height: 28px; }
+      .btn, .cta-row { width: 100%; }
+      .flow-row { grid-template-columns: 1fr; }
+      
+      .company-panel, .cta-panel { padding: 30px 22px; border-radius: 26px; }
+      .process-item { grid-template-columns: 1fr; gap: 12px; }
+      .closing-truth { font-size: 25px; line-height: 34px; }
+    }
+
+/* urban-nexus-safe-apple-fix */
+
+    html, body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Helvetica Neue", Arial, sans-serif;
+      letter-spacing: normal;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    p, h1, h2, h3, h4, div, span, a, input, textarea, select, button {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    p, .body-copy, .flow-desc, .card p, .mechanism-card p, .expectation-card p, .faq-item p,
+    .form-microcopy, .privacy-note, .footer-contact, .footer-links {
+      letter-spacing: normal !important;
+      text-transform: none !important;
+    }
+
+    .logo {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Helvetica Neue", Arial, sans-serif;
+      font-weight: 760;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+    }
+
+    .footer-contact {
+      font-size: 14px;
+      line-height: 29px;
+      font-weight: 500;
+      color: var(--dark-muted);
+      text-align: right;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    .footer-contact a {
+      color: inherit;
+      text-decoration: none;
+      letter-spacing: normal !important;
+      text-transform: none !important;
+    }
+
+    .footer-contact a:hover {
+      color: #FFFFFF;
+    }
+
+    @media (min-width: 1081px) {
+      .hero-grid {
+        align-items: start !important;
+      }
+
+      .hero .system-panel {
+        margin-top: 0 !important;
+      }
+    }
+
+    .flow-row {
+      grid-template-columns: 1fr !important;
+    }
+
+    .next-step,
+    .process-item {
+      grid-template-columns: 1fr !important;
+    }
+
+</style>
+</head>
+<body>
+<header class="header">
+<div class="container header-inner">
+<a class="logo" href="/us-market-entry-validation">URBAN NEXUS</a>
+<nav aria-label="Primary navigation" class="nav">
+<a href="/us-market-entry-validation">Validation</a>
+<a href="/us-market-entry-system">System</a>
+<a href="/market-validation-us">Market Validation</a>
+<a href="/pricing">Pricing</a>
+<a href="/contact">Contact</a>
+</nav>
+<a class="btn btn-primary" href="/contact">Request Entry Evaluation</a>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Validation-first US market entry system</div>
+<h1>Manufacturers and exporters entering the US market lose the most when demand is assumed too early</h1>
+<p class="subtext">Urban Nexus helps manufacturers and exporters validate demand, pricing, buyer logic, and channel risk before committing to US market execution.</p>
+<p class="urgency-line">Most companies realize the mistake only after budget is already committed. Validation moves that decision earlier — before execution becomes expensive.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="/contact">Request Entry Evaluation</a>
+<a class="btn btn-secondary-dark" href="#faq">See How Validation Works</a>
+</div>
+<div aria-label="Start here if" class="entry-hook">
+<div class="entry-title">Start here if:</div>
+<div class="entry-grid">
+<div class="entry-item">You are entering the US market for the first time</div>
+<div class="entry-item">You are unsure whether real demand exists</div>
+<div class="entry-item">You are not ready to commit budget without validation</div>
+</div>
+</div>
+</div>
+<aside aria-label="Decision system panel" class="system-panel">
+<div class="panel-content">
+<div class="panel-kicker">Decision System</div>
+<div class="panel-title">No execution before validated clarity</div>
+<div class="decision-flow">
+<div class="flow-row">
+<div><div class="flow-title">Validate demand</div><div class="flow-desc">Confirm if the market signal exists</div></div>
+</div>
+<div class="flow-row">
+<div><div class="flow-title">Define strategy</div><div class="flow-desc">Positioning, pricing, and channel logic</div></div>
+</div>
+<div class="flow-row">
+<div><div class="flow-title">Execute with control</div><div class="flow-desc">Scale only after validation</div></div>
+</div>
+</div>
+<div class="panel-lock">Execution is not the first step. Execution is unlocked only after the entry decision becomes clear.</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="company">
+<div class="container">
+<div class="split-grid">
+<div>
+<div class="section-label">Company Positioning</div>
+<h2>Urban Nexus is not a consulting firm or marketing agency</h2>
+<div class="body-copy">
+<p>Urban Nexus is a structured US market entry and sales execution platform designed to reduce decision risk before companies invest in execution.</p>
+<p>We work with manufacturers, exporters, and companies entering or expanding in the US market who need clarity before committing resources, budget, and operational effort.</p>
+</div>
+<div class="principle">No execution without validated decision clarity.</div>
+</div>
+<div class="company-panel">
+<h3>What makes this different</h3>
+<div class="card-grid" style="margin-top:22px;">
+<div class="card"><h3>Delayed execution</h3><p>Execution is intentionally delayed until validation is complete.</p></div>
+<div class="card"><h3>Evidence first</h3><p>Decisions are tested before budget is committed.</p></div>
+<div class="card"><h3>Controlled risk</h3><p>Strategy is built on evidence, not assumptions.</p></div>
+<div class="card"><h3>Structured entry</h3><p>Market entry happens only when the next step is clear.</p></div>
+</div>
+<div class="company-lock">Most companies do not fail because of poor execution. They fail because the initial decision was wrong — and no one tested it.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section soft" id="services">
+<div class="container">
+<div class="section-label">SEO Service Focus</div>
+<h2>US market entry validation for manufacturers, exporters, and international companies</h2>
+<p class="body-copy">Urban Nexus helps companies validate the commercial logic of entering the United States before investing in sales execution, marketing campaigns, distribution, partnerships, or operational expansion.</p>
+<div aria-label="US market entry validation services" class="seo-keyword-strip">
+<div class="seo-keyword">US market entry validation</div>
+<div class="seo-keyword">Demand validation</div>
+<div class="seo-keyword">Pricing validation</div>
+<div class="seo-keyword">Buyer and channel validation</div>
+</div>
+</div>
+</section>
+<section class="section" id="process">
+<div class="container">
+<div class="section-label">How Validation Works</div>
+<h2>How US market entry validation works before execution begins</h2>
+<p class="body-copy">Validation is designed to replace assumption with controlled decision clarity. Before a company commits budget to sales, marketing, distribution, or partnerships, the system tests whether the US market shows enough commercial signal to justify the next stage.</p>
+<div class="process-list">
+<div class="process-item">
+<div><h3>Demand testing</h3><p>Determine whether the US market shows real buying interest or only theoretical fit.</p></div>
+</div>
+<div class="process-item">
+<div><h3>Pricing validation</h3><p>Evaluate whether customers are likely to pay at a level that supports the business model.</p></div>
+</div>
+<div class="process-item">
+<div><h3>Buyer and channel validation</h3><p>Identify who the real decision-maker is and which acquisition paths produce useful commercial signals.</p></div>
+</div>
+<div class="rule-box">You do not move into execution until validation creates enough decision clarity.</div>
+</div>
+</div>
+</section>
+<section class="section soft" id="strategy">
+<div class="container">
+<div class="section-label">SEO Depth</div>
+<h2>Why companies should validate before entering the US market</h2>
+<div class="body-copy">
+<p>Many international companies approach the US market by starting with execution: building a website, hiring sales support, launching ads, contacting distributors, or investing in marketing campaigns. The risk is that these actions often happen before the core market assumptions have been tested.</p>
+<p>US market entry validation helps answer the commercial questions that should come first: Is there real demand? Is the pricing realistic? Who is the actual buyer? Which channels produce signals instead of noise? What should be avoided before significant budget is committed?</p>
+<p>For manufacturers and exporters, this validation-first approach creates a controlled path. Instead of spending first and learning later, the company learns before execution begins. That is the difference between market activity and market entry discipline.</p>
+</div>
+</div>
+</section>
+<section class="section dark-section" id="decision">
+<div class="container">
+<div class="decision-wrap">
+<div class="section-label">Decision Moment</div>
+<h2>There are two ways to enter the US market</h2>
+<p class="decision-intro">One is based on assumptions. The other is based on validated decisions.</p>
+<div class="decision-headings">
+<div class="decision-head risk-head">Enter based on assumptions</div>
+<div class="decision-head control-head">Validate before investing</div>
+</div>
+<div class="decision-columns">
+<div class="decision-column">
+<div class="decision-box">Assumed demand, not validated</div>
+<div class="decision-box">Pricing based on guesswork</div>
+<div class="decision-box">Channels chosen without evidence</div>
+<div class="decision-box">Budget exposed before clarity</div>
+</div>
+<div class="decision-column">
+<div class="decision-box control">Validated demand, evidence-based</div>
+<div class="decision-box control">Clear customer and buyer logic</div>
+<div class="decision-box control">Structured entry path</div>
+<div class="decision-box control">Controlled execution only after validation</div>
+</div>
+</div>
+<div class="pressure-cards-row">
+<div class="pressure-card">Budget is being committed without clarity</div>
+<div class="pressure-card">Channels are being selected without evidence</div>
+<div class="pressure-card">Pricing is being set without validation</div>
+</div>
+<div class="reality-lock">At this stage, the risk is not future — it is already present.</div>
+<div class="closing-truth">The mistake is not entering the market.<br/>The mistake is entering without knowing if you should.</div>
+</div>
+</div>
+</section>
+<section class="section" id="expect">
+<div class="container">
+<div class="section-label">What To Expect</div>
+<h2>Validation answers the question before execution begins</h2>
+<p class="body-copy">The goal is not to create more activity. The goal is to determine whether the market entry decision is strong enough to justify the next stage.</p>
+<div class="expectation-grid">
+<div class="expectation-card"><h3>Demand clarity</h3><p>Understand whether the US market is showing real interest or only theoretical fit.</p></div>
+<div class="expectation-card"><h3>Risk exposure</h3><p>Identify what could waste budget before execution, hiring, campaigns, or partnerships begin.</p></div>
+<div class="expectation-card"><h3>Entry direction</h3><p>Define whether to proceed, adjust positioning, change strategy, or stop before spending more.</p></div>
+</div>
+</div>
+</section>
+<section class="section soft" id="faq">
+<div class="container">
+<div class="section-label">Questions Before Execution</div>
+<h2>Common questions about US market entry validation</h2>
+<div class="faq-grid">
+<div class="faq-item"><h3>What is US market entry validation?</h3><p>It is a structured process used to test demand, pricing, buyer logic, and acquisition channels before a company commits budget to US market execution.</p></div>
+<div class="faq-item"><h3>Who should use this process?</h3><p>Manufacturers, exporters, and international companies entering or expanding in the United States should validate before investing in sales, marketing, distribution, or partnerships.</p></div>
+<div class="faq-item"><h3>What does validation help prevent?</h3><p>It helps reduce the risk of spending on the wrong customer segment, pricing model, channel strategy, or market entry path before there is enough evidence.</p></div>
+</div>
+</div>
+</section>
+<section class="section cta-section" id="contact">
+<div class="container">
+<div class="cta-panel">
+<div class="section-label">Lead Generation</div>
+<h2>Request a US market entry validation review</h2>
+<p class="body-copy">Submit your company details and the market entry question you need to validate. The goal is to identify whether your US entry decision is clear enough to justify execution.</p>
+<form class="lead-form" id="leadForm">
+<input name="source" type="hidden" value="urban-nexus-seo-landing"/>
+<input name="page" type="hidden" value="/us-market-entry-validation"/>
+<input id="utm_source" name="utm_source" type="hidden"/>
+<input id="utm_medium" name="utm_medium" type="hidden"/>
+<input id="utm_campaign" name="utm_campaign" type="hidden"/>
+<input id="utm_term" name="utm_term" type="hidden"/>
+<input id="utm_content" name="utm_content" type="hidden"/>
+<div class="form-grid">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="email" placeholder="Business email" required="" type="email"/>
+</div>
+<div class="form-grid">
+<input name="company" placeholder="Company name" required="" type="text"/>
+<input name="country" placeholder="Country / market" type="text"/>
+</div>
+<select name="stage" required="">
+<option value="">Current US entry stage</option>
+<option>Planning to enter the US market</option>
+<option>Already selling, but results are unclear</option>
+<option>Looking for pricing / demand validation</option>
+<option>Need channel or buyer validation</option>
+</select>
+<textarea name="message" placeholder="What do you need to validate before investing in US execution?" required=""></textarea>
+<button class="btn btn-primary" type="submit">Request Validation Review</button>
+<div class="form-status" id="formStatus"></div>
+<div class="privacy-note">By submitting this form, you agree that Urban Nexus may use your information to respond to your request. We do not sell your contact information.</div>
+<div class="form-note">Prefer email? Contact Urban Nexus directly at info@urbannexus.ai</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="logo">URBAN NEXUS</div>
+<div class="footer-links">
+<div>US Market Entry</div>
+<div>Market Validation</div>
+<div>Demand Validation</div>
+<div>Sales Execution</div>
+</div>
+<div class="footer-contact"><a href="mailto:info@urbannexus.ai">info@urbannexus.ai</a></div>
+</div>
+<div class="copyright">Copyright © 2026 Urban Nexus. All rights reserved.</div>
+</div>
+</footer>
+
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach((key) => {
+    const field = document.getElementById(key);
+    if (field) field.value = params.get(key) || "";
+  });
+
+  const form = document.getElementById("leadForm");
+  const statusEl = document.getElementById("formStatus");
+
+  if (form) {
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      if (statusEl) statusEl.textContent = "Submitting your request...";
+
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch("/api/lead-validation-request", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) throw new Error("Submission failed");
+
+        window.location.href = "/thank-you";
+      } catch (error) {
+        if (statusEl) statusEl.textContent = "Submission could not be completed. Please email info@urbannexus.ai.";
+      }
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+
+
+<html lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pricing — Market Validation &amp; US Market Entry System | Urban Nexus</title>
+<meta content="Urban Nexus pricing model: Market Validation Entry Phase, Structured Validation, and Full US Market Entry System. Start with validation before you invest further." name="description"/>
+<link href="https://urbannexus.ai/pricing" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<meta content="Pricing — Market Validation &amp; US Market Entry System | Urban Nexus" property="og:title"/>
+<meta content="You are not buying services. You are buying clarity, risk reduction, and controlled decisions before US market execution." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://urbannexus.ai/pricing" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Urban Nexus US Market Entry Pricing",
+    "provider": {
+      "@type": "Organization",
+      "name": "Urban Nexus",
+      "url": "https://urbannexus.ai"
+    },
+    "serviceType": "US Market Entry Validation and Execution System",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United States"
+    },
+    "description": "Pricing structure for market validation and structured US market entry support."
+  }
+  </script>
+<style>
+    :root {
+      --dark-bg: #050506;
+      --dark-bg-2: #0B0B0C;
+      --dark-text: #FFFFFF;
+      --dark-muted: #A1A1AA;
+      --dark-soft: #71717A;
+      --light-bg: #FFFFFF;
+      --light-soft-bg: #F6F7F9;
+      --light-text: #0B0B0C;
+      --light-muted: #5F636B;
+      --light-border: #E5E7EB;
+      --light-border-strong: #D6DAE1;
+      --accent: #4F46E5;
+      --accent-hover: #4338CA;
+      --accent-soft: rgba(79,70,229,0.08);
+      --container: 1200px;
+      --radius: 24px;
+      --shadow-card: 0 12px 34px rgba(15,23,42,0.04);
+      --shadow-soft: 0 18px 52px rgba(15,23,42,0.06);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--light-bg);
+      color: var(--light-text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Segoe UI", Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    p, h1, h2, h3 { margin: 0; }
+
+    .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 40px; }
+
+    .header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(5,5,6,0.88);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: var(--dark-text);
+    }
+    .header-inner { height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .logo { font-size: 13px; font-weight: 760; letter-spacing: 0.16em; white-space: nowrap; }
+    .nav { display: flex; align-items: center; gap: 24px; font-size: 13px; color: var(--dark-muted); }
+    .nav a:hover { color: var(--dark-text); }
+
+    .btn {
+      min-height: 52px;
+      display: inline-flex; align-items: center; justify-content: center;
+      border-radius: 999px; padding: 0 24px;
+      border: 1px solid transparent;
+      font-size: 14px; font-weight: 700; line-height: 1;
+      transition: 180ms ease; white-space: nowrap; cursor: pointer;
+    }
+    .btn-primary { background: var(--accent); color: #FFFFFF; box-shadow: 0 12px 30px rgba(79,70,229,0.24); }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-secondary-dark { color: var(--dark-text); border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.04); }
+    .btn-secondary-dark:hover { border-color: rgba(255,255,255,0.36); background: rgba(255,255,255,0.07); transform: translateY(-1px); }
+
+    .hero {
+      min-height: calc(100vh - 72px);
+      padding: 108px 0 96px;
+      display: flex; align-items: center;
+      color: var(--dark-text);
+      background:
+        radial-gradient(circle at 82% 8%, rgba(79,70,229,0.18), transparent 25%),
+        radial-gradient(circle at 18% 24%, rgba(255,255,255,0.055), transparent 20%),
+        linear-gradient(180deg, var(--dark-bg) 0%, var(--dark-bg-2) 100%);
+    }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 710px) minmax(360px, 460px); gap: 72px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 999px; padding: 9px 14px;
+      color: var(--dark-muted); font-size: 12px; font-weight: 720;
+      margin-bottom: 30px; background: rgba(255,255,255,0.035);
+    }
+    .eyebrow::before { content: ""; width: 7px; height: 7px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 0 5px rgba(79,70,229,0.16); }
+    h1 { max-width: 780px; font-size: clamp(46px, 5vw, 72px); line-height: 0.98; letter-spacing: -0.066em; font-weight: 760; }
+    .hero .subtext { max-width: 680px; margin-top: 26px; color: var(--dark-muted); font-size: 21px; line-height: 32px; letter-spacing: -0.015em; }
+    .urgency-line { margin-top: 20px; max-width: 650px; color: #FFFFFF; font-size: 17px; line-height: 27px; font-weight: 720; letter-spacing: -0.01em; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+
+    .entry-hook { margin-top: 40px; max-width: 690px; border: 1px solid rgba(255,255,255,0.12); background: rgba(255,255,255,0.04); border-radius: 22px; padding: 22px; }
+    .entry-title { color: #FFFFFF; font-size: 15px; line-height: 22px; font-weight: 760; }
+    .entry-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 14px; }
+    .entry-item { min-height: 76px; display: flex; align-items: center; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.18); border-radius: 16px; padding: 14px; color: var(--dark-muted); font-size: 13px; line-height: 19px; font-weight: 650; }
+
+    .system-panel { position: relative; border: 1px solid rgba(255,255,255,0.12); background: linear-gradient(180deg, rgba(19,19,22,0.98), rgba(10,10,12,0.98)); border-radius: 28px; padding: 30px; box-shadow: 0 30px 90px rgba(0,0,0,0.45); overflow: hidden; }
+    .system-panel::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px); background-size: 34px 34px; mask-image: linear-gradient(to bottom, black, transparent 74%); pointer-events: none; }
+    .panel-content { position: relative; z-index: 1; }
+    .panel-kicker { color: var(--dark-soft); font-size: 12px; font-weight: 760; letter-spacing: 0.13em; text-transform: uppercase; }
+    .panel-title { margin-top: 12px; font-size: 28px; line-height: 34px; letter-spacing: -0.04em; font-weight: 740; }
+    .decision-flow { margin-top: 30px; display: grid; gap: 12px; }
+    .flow-row { display: grid; grid-template-columns: 1fr; align-items: center; gap: 14px; border: 1px solid rgba(255,255,255,0.1); background: rgba(0,0,0,0.24); border-radius: 16px; padding: 14px; }
+    .flow-title { color: var(--dark-text); font-size: 15px; font-weight: 720; line-height: 20px; }
+    .flow-desc { margin-top: 3px; color: var(--dark-muted); font-size: 13px; line-height: 18px; }
+    .panel-lock { margin-top: 22px; border-left: 2px solid var(--accent); background: rgba(79,70,229,0.12); border-radius: 0 16px 16px 0; padding: 17px 20px; color: var(--dark-text); font-size: 15px; line-height: 24px; font-weight: 680; }
+
+    .section { padding: 104px 0; background: var(--light-bg); border-top: 1px solid var(--light-border); }
+    .section.soft { background: var(--light-soft-bg); }
+    .section-label { color: var(--accent); font-size: 13px; line-height: 18px; font-weight: 780; margin-bottom: 20px; }
+    h2 { max-width: 860px; color: var(--light-text); font-size: clamp(34px, 4vw, 52px); line-height: 1.04; letter-spacing: -0.06em; font-weight: 730; }
+    h3 { color: var(--light-text); font-size: 22px; line-height: 30px; letter-spacing: -0.035em; font-weight: 720; }
+    .body-copy { max-width: 780px; margin-top: 24px; color: var(--light-muted); font-size: 19px; line-height: 31px; letter-spacing: -0.015em; }
+    .body-copy p + p { margin-top: 18px; }
+    .split-grid { display: grid; grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr); gap: 74px; align-items: start; }
+    .card-grid, .seo-keyword-strip, .mechanism-grid, .expectation-grid { display: grid; gap: 16px; }
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+    .seo-keyword-strip { grid-template-columns: repeat(4, 1fr); margin-top: 36px; }
+    .mechanism-grid { grid-template-columns: repeat(4, 1fr); margin-top: 42px; }
+    .expectation-grid { grid-template-columns: repeat(3, 1fr); margin-top: 42px; }
+
+    .card, .seo-keyword, .mechanism-card, .expectation-card, .faq-item {
+      background: #FFFFFF; border: 1px solid var(--light-border); border-radius: var(--radius); padding: 26px; box-shadow: var(--shadow-card);
+    }
+    .card p, .mechanism-card p, .expectation-card p, .faq-item p { margin-top: 10px; color: var(--light-muted); font-size: 16px; line-height: 26px; }
+    .seo-keyword { text-align: center; font-weight: 700; font-size: 15px; line-height: 22px; }
+    .principle { margin-top: 32px; max-width: 760px; border-left: 3px solid var(--accent); padding-left: 24px; color: var(--light-text); font-size: 26px; line-height: 36px; letter-spacing: -0.04em; font-weight: 760; }
+    .company-panel { border: 1px solid var(--light-border); background: #FFFFFF; border-radius: 30px; padding: 38px; box-shadow: var(--shadow-soft); }
+    .company-lock { margin-top: 26px; background: var(--accent-soft); border: 1px solid rgba(79,70,229,0.18); border-radius: 20px; padding: 22px; color: var(--light-text); font-size: 18px; line-height: 28px; font-weight: 700; }
+
+    .process-list { margin-top: 36px; display: grid; gap: 16px; }
+    .process-item { display: grid; grid-template-columns: 1fr; gap: 24px; padding: 28px; background: #FFFFFF; border: 1px solid var(--light-border); border-radius: 24px; box-shadow: var(--shadow-card); }
+    .process-item p { margin-top: 8px; color: var(--light-muted); font-size: 16px; line-height: 26px; }
+    .rule-box { margin-top: 16px; padding: 28px; background: #111114; color: #FFFFFF; border-radius: 24px; font-size: 20px; line-height: 30px; font-weight: 760; letter-spacing: -0.03em; }
+
+    .dark-section { background: var(--dark-bg); color: var(--dark-text); border-top: 0; }
+    .dark-section .section-label { color: #C7C3FF; text-align: center; }
+    .dark-section h2 { color: #FFFFFF; margin: 0 auto; text-align: center; }
+    .decision-intro { max-width: 680px; margin: 18px auto 0; color: var(--dark-muted); font-size: 18px; line-height: 28px; text-align: center; }
+    .decision-wrap { max-width: 1050px; margin: 0 auto; }
+    .decision-headings, .decision-columns, .pressure-cards-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+    .decision-headings { margin-top: 46px; text-align: center; }
+    .decision-columns { margin-top: 18px; }
+    .pressure-cards-row { grid-template-columns: repeat(3, 1fr); margin-top: 38px; gap: 14px; }
+    .decision-head, .decision-box, .pressure-card, .forced-choice { border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.035); border-radius: 18px; }
+    .decision-head { padding: 18px; font-weight: 720; font-size: 18px; line-height: 26px; }
+    .risk-head, .decision-box { color: #8A8A93; }
+    .control-head, .decision-box.control { color: #FFFFFF; border-color: rgba(79,70,229,0.52); background: rgba(79,70,229,0.09); }
+    .decision-column { display: grid; gap: 12px; }
+    .decision-box { padding: 17px 16px; text-align: center; font-size: 15px; line-height: 22px; font-weight: 680; }
+    .forced-choice { max-width: 780px; margin: 44px auto 0; padding: 28px; text-align: center; }
+    .forced-choice-main { font-size: 24px; line-height: 34px; font-weight: 760; letter-spacing: -0.04em; }
+    .pressure-card { min-height: 112px; display: flex; align-items: center; justify-content: center; padding: 20px; color: #FFFFFF; font-size: 15px; line-height: 23px; font-weight: 680; text-align: center; }
+    .reality-lock { max-width: 760px; margin: 36px auto 0; border: 1px solid rgba(79,70,229,0.44); background: rgba(79,70,229,0.1); border-radius: 24px; padding: 24px 28px; text-align: center; color: #FFFFFF; font-size: 22px; line-height: 32px; font-weight: 750; letter-spacing: -0.035em; }
+    .closing-truth { max-width: 840px; margin: 44px auto 0; border-top: 1px solid rgba(255,255,255,0.14); padding-top: 34px; text-align: center; color: #FFFFFF; font-size: 31px; line-height: 40px; font-weight: 780; letter-spacing: -0.06em; }
+
+    .faq-grid { display: grid; gap: 14px; margin-top: 42px; }
+
+    .cta-section { text-align: center; background: linear-gradient(180deg, #FFFFFF 0%, #F6F7F9 100%); }
+    .cta-section h2, .cta-section .body-copy { margin-left: auto; margin-right: auto; }
+    .cta-panel { max-width: 920px; margin: 0 auto; border: 1px solid var(--light-border); background: #FFFFFF; border-radius: 34px; padding: 58px 44px; box-shadow: 0 24px 70px rgba(15,23,42,0.07); }
+
+    .lead-form { margin-top: 34px; display: grid; gap: 12px; text-align: left; }
+    .lead-form input, .lead-form textarea, .lead-form select {
+      width: 100%; min-height: 52px; border: 1px solid var(--light-border-strong); border-radius: 16px; padding: 14px 16px; font-family: inherit; font-size: 15px; color: var(--light-text); background: #FFFFFF; outline: none;
+    }
+    .lead-form textarea { min-height: 120px; resize: vertical; }
+    .lead-form input:focus, .lead-form textarea:focus, .lead-form select:focus { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(79,70,229,0.10); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .form-note, .privacy-note { color: var(--light-muted); font-size: 13px; line-height: 20px; text-align: center; margin-top: 10px; }
+    .privacy-note a { color: var(--light-text); text-decoration: underline; text-underline-offset: 3px; }
+    .form-status { min-height: 22px; color: var(--light-muted); font-size: 14px; line-height: 22px; text-align: center; }
+
+    .footer { padding: 64px 0 32px; background: #050506; color: #FFFFFF; }
+    .footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; align-items: start; }
+    .footer-links, .footer-contact { color: var(--dark-muted); font-size: 14px; line-height: 29px; }
+    .footer-contact { text-align: right; }
+    .copyright { margin-top: 54px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.09); text-align: center; color: #73737A; font-size: 12px; }
+
+    @media (max-width: 1080px) {
+      .hero-grid, .split-grid { grid-template-columns: 1fr; }
+      .system-panel { max-width: 620px; }
+      .mechanism-grid, .seo-keyword-strip { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 860px) {
+      .nav { display: none; }
+      .card-grid, .seo-keyword-strip, .mechanism-grid, .expectation-grid, .decision-headings, .decision-columns, .pressure-cards-row, .entry-grid, .form-grid, .footer-grid { grid-template-columns: 1fr; }
+      .footer-contact { text-align: left; }
+    }
+    @media (max-width: 680px) {
+      .container { padding: 0 18px; }
+      .header-inner { height: 66px; }
+      .header .btn { min-height: 42px; padding: 0 16px; font-size: 13px; }
+      .hero { min-height: auto; padding: 74px 0 70px; }
+      .hero-grid { gap: 46px; }
+      h1 { font-size: 42px; line-height: 44px; }
+      .hero .subtext { font-size: 18px; line-height: 28px; }
+      .section { padding: 72px 0; }
+      h2 { font-size: 34px; line-height: 38px; }
+      .body-copy { font-size: 17px; line-height: 28px; }
+      .btn, .cta-row { width: 100%; }
+      .flow-row { grid-template-columns: 1fr; }
+      
+      .company-panel, .cta-panel { padding: 30px 22px; border-radius: 26px; }
+      .process-item { grid-template-columns: 1fr; gap: 12px; }
+      .closing-truth { font-size: 25px; line-height: 34px; }
+    }
+  
+.contact-hero-note{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:720px}
+.contact-note-item{min-height:76px;display:flex;align-items:center;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.04);border-radius:16px;padding:14px;color:var(--dark-muted);font-size:13px;line-height:19px;font-weight:650}
+.contact-form-panel{border:1px solid var(--light-border);background:#fff;border-radius:34px;padding:42px;box-shadow:var(--shadow-soft)}
+.contact-form{display:grid;gap:14px;margin-top:26px}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;min-height:54px;border:1px solid var(--light-border-strong);border-radius:16px;padding:15px 16px;font-family:inherit;font-size:15px;color:var(--light-text);background:#fff;outline:none}
+.contact-form textarea{min-height:132px;resize:vertical}
+.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(79,70,229,.10)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-status{min-height:22px;color:var(--light-muted);font-size:14px;line-height:22px;text-align:center}
+.form-microcopy,.privacy-note{color:var(--light-muted);font-size:13px;line-height:20px;text-align:center}
+.next-step-list{display:grid;gap:16px;margin-top:36px}
+.next-step{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:start;border:1px solid var(--light-border);background:#fff;border-radius:24px;padding:26px;box-shadow:var(--shadow-card)}
+.safe-box{margin-top:32px;border:1px solid rgba(79,70,229,.20);background:var(--accent-soft);border-radius:24px;padding:26px;color:var(--light-text);font-size:19px;line-height:30px;font-weight:720}
+@media(max-width:860px){.contact-hero-note,.form-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.contact-form-panel{padding:28px 20px;border-radius:26px}.next-step{grid-template-columns:1fr}}
+
+
+.pricing-panel{border:1px solid var(--light-border);background:#fff;border-radius:34px;padding:38px;box-shadow:var(--shadow-soft)}
+.phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px}
+.phase-card{position:relative;border:1px solid var(--light-border);background:#fff;border-radius:30px;padding:30px;box-shadow:var(--shadow-card);display:flex;flex-direction:column;min-height:520px}
+.phase-card.featured{border-color:rgba(79,70,229,.35);box-shadow:0 24px 70px rgba(79,70,229,.10)}
+.phase-label{font-size:12px;font-weight:820;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.phase-title{margin-top:14px;font-size:26px;line-height:32px;letter-spacing:-.045em;font-weight:780;color:var(--light-text)}
+.phase-price{margin-top:18px;font-size:clamp(38px,4vw,54px);line-height:1;letter-spacing:-.06em;font-weight:800;color:var(--light-text)}
+.phase-timeline{margin-top:10px;color:var(--light-muted);font-size:15px;line-height:24px;font-weight:680}
+.phase-copy{margin-top:18px;color:var(--light-muted);font-size:16px;line-height:26px}
+.phase-list{display:grid;gap:10px;margin-top:24px}
+.phase-list div{border:1px solid var(--light-border);background:var(--light-soft-bg);border-radius:14px;padding:13px 14px;color:var(--light-text);font-size:14px;line-height:21px;font-weight:650}
+.phase-card .btn{margin-top:auto}
+.value-band{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.value-item{border:1px solid var(--light-border);background:#fff;border-radius:22px;padding:24px;text-align:center;box-shadow:var(--shadow-card)}
+.value-number{font-size:34px;line-height:1;letter-spacing:-.055em;font-weight:800;color:var(--light-text)}
+.value-text{margin-top:10px;color:var(--light-muted);font-size:15px;line-height:23px;font-weight:650}
+.path-grid{display:grid;gap:16px;margin-top:36px}
+.path-step{display:grid;grid-template-columns:72px 1fr auto;gap:22px;align-items:center;border:1px solid var(--light-border);background:#fff;border-radius:24px;padding:24px;box-shadow:var(--shadow-card)}
+.path-price{font-weight:800;color:var(--light-text);white-space:nowrap}
+.do-not-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:36px}
+.do-not-item{border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.035);border-radius:18px;padding:18px;text-align:center;color:#fff;font-size:15px;line-height:22px;font-weight:720}
+.sales-line{margin-top:36px;border:1px solid rgba(79,70,229,.44);background:rgba(79,70,229,.10);border-radius:24px;padding:28px;text-align:center;color:#fff;font-size:26px;line-height:36px;font-weight:800;letter-spacing:-.045em}
+.final-table{width:100%;border-collapse:separate;border-spacing:0 12px;margin-top:36px}
+.final-table th{color:var(--light-muted);font-size:13px;text-transform:uppercase;letter-spacing:.08em;text-align:left;padding:0 18px 4px}
+.final-table td{background:#fff;border-top:1px solid var(--light-border);border-bottom:1px solid var(--light-border);padding:20px 18px;font-size:16px;font-weight:680}
+.final-table td:first-child{border-left:1px solid var(--light-border);border-radius:18px 0 0 18px}
+.final-table td:last-child{border-right:1px solid var(--light-border);border-radius:0 18px 18px 0}
+@media(max-width:1080px){.phase-grid{grid-template-columns:1fr}.phase-card{min-height:auto}.value-band,.do-not-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){.value-band,.do-not-grid{grid-template-columns:1fr}.path-step{grid-template-columns:1fr}.path-price{white-space:normal}.final-table{display:block;overflow-x:auto;white-space:nowrap}}
+
+
+/* urban-nexus-pricing-no-stretch-final */
+html,
+body,
+body * {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", Inter, "Helvetica Neue", Arial, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* HARD FIX: remove stretched typography from pricing page */
+body * {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  font-stretch: normal !important;
+}
+
+/* Restore only controlled enterprise spacing for short labels/navigation */
+.logo,
+.nav a,
+.eyebrow,
+.section-label,
+.phase-label,
+.panel-kicker,
+.final-table th {
+  letter-spacing: 0.045em !important;
+}
+
+/* Make all long text readable and not expanded */
+h1, h2, h3,
+p,
+.body-copy,
+.subtext,
+.urgency-line,
+.phase-title,
+.phase-price,
+.phase-timeline,
+.phase-copy,
+.phase-list div,
+.value-number,
+.value-text,
+.path-step,
+.path-step p,
+.path-price,
+.decision-intro,
+.sales-line,
+.reality-lock,
+.closing-truth,
+.do-not-item,
+.flow-title,
+.flow-desc,
+.panel-title,
+.panel-lock,
+.card p,
+.company-lock,
+.form-note,
+.privacy-note,
+.footer-contact,
+.footer-contact a,
+.final-table td,
+input,
+textarea,
+select,
+button {
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
+  text-transform: none;
+}
+
+/* Keep uppercase only where it is intentional and short */
+.logo,
+.nav a,
+.eyebrow,
+.section-label,
+.phase-label,
+.panel-kicker,
+.final-table th {
+  text-transform: uppercase;
+}
+
+.footer-contact {
+  text-align: right;
+  color: var(--dark-muted);
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 500;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #FFFFFF;
+}
+
+/* Keep right hero panel aligned higher */
+@media (min-width: 1081px) {
+  .hero-grid {
+    align-items: start !important;
+  }
+
+  .hero .system-panel {
+    margin-top: 0 !important;
+  }
+}
+
+/* Keep numbering removed layout clean */
+.flow-row,
+.process-item,
+.next-step,
+.path-step {
+  grid-template-columns: 1fr !important;
+}
+
+</style></head>
+<body>
+<header class="header">
+<div class="container header-inner">
+<a class="logo" href="/us-market-entry-validation">URBAN NEXUS</a>
+<nav aria-label="Primary navigation" class="nav">
+<a href="/us-market-entry-validation">Validation</a>
+<a href="/us-market-entry-system">System</a>
+<a href="/market-validation-us">Market Validation</a>
+<a href="/pricing">Pricing</a>
+<a href="/contact">Contact</a>
+</nav>
+<a class="btn btn-primary" href="/contact">Request Entry Evaluation</a>
+</div>
+</header>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Revenue engine &amp; decision system</div>
+<h1>You are not buying services. You are buying clarity, risk reduction, and controlled decisions.</h1>
+<p class="subtext">Urban Nexus pricing is structured around one rule: entry into the system starts only with Market Validation.</p>
+<p class="urgency-line">Without validation, companies typically lose $20,000–$100,000 in initial execution, 2–6 months of time, and correct market positioning before they realize the mistake.</p>
+<div class="cta-row">
+<a class="btn btn-primary" href="/contact">Request Entry Evaluation</a>
+<a class="btn btn-secondary-dark" href="/pricing">See Pricing Structure</a>
+</div>
+</div>
+<aside aria-label="Pricing logic panel" class="system-panel">
+<div class="panel-content">
+<div class="panel-kicker">Core Rule</div>
+<div class="panel-title">You do not buy execution upfront. You buy the next validated decision.</div>
+<div class="decision-flow">
+<div class="flow-row">
+<div><div class="flow-title">Entry Validation</div><div class="flow-desc">$2,500 · 5–7 business days</div></div>
+</div>
+<div class="flow-row">
+<div><div class="flow-title">Structured Validation</div><div class="flow-desc">$5,500 · 2–3 weeks</div></div>
+</div>
+<div class="flow-row">
+<div><div class="flow-title">Full System</div><div class="flow-desc">$10K+ or retainer</div></div>
+</div>
+</div>
+<div class="panel-lock">Start with validation before you invest further.</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="principle">
+<div class="container">
+<div class="split-grid">
+<div>
+<div class="section-label">Pricing Principle</div>
+<h2>Not packages. Three phases of one controlled system.</h2>
+<div class="body-copy">
+<p>The pricing model is not built around disconnected services. It is built around decision control.</p>
+<p>The client does not buy marketing, consulting, or random execution. The client buys clarity before capital is deployed, risk reduction before mistakes compound, and a controlled path before scale.</p>
+</div>
+</div>
+<div class="company-panel">
+<h3>What the client is really buying</h3>
+<div class="card-grid" style="margin-top:22px;">
+<div class="card"><h3>Clarity</h3><p>Should the company enter the US market, and what must be understood first?</p></div>
+<div class="card"><h3>Risk reduction</h3><p>What could waste budget if execution starts too early?</p></div>
+<div class="card"><h3>Controlled decisions</h3><p>What is the next logical step based on evidence?</p></div>
+<div class="card"><h3>Execution discipline</h3><p>What should happen only after validation?</p></div>
+</div>
+<div class="company-lock">Entry into the system starts only with Market Validation.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section soft" id="pricing">
+<div class="container">
+<div class="section-label">How To Start</div>
+<h2>Start with the first controlled decision</h2>
+<p class="body-copy">The goal is not to sell the full system upfront. The goal is to move the client into the correct decision sequence.</p>
+<div class="phase-grid">
+<div class="phase-card">
+<div class="phase-label">Step 1 · Entry</div>
+<div class="phase-title">Market Validation — Entry Phase</div>
+<div class="phase-price">$2,500</div>
+<div class="phase-timeline">Fixed · 5–7 business days</div>
+<p class="phase-copy">For companies considering US expansion, unsure about demand, and needing clarity before committing resources.</p>
+<div class="phase-list">
+<div>Product &amp; offer analysis</div>
+<div>US demand signal review</div>
+<div>Initial customer segmentation</div>
+<div>High-level channel assessment</div>
+<div>Key risk identification</div>
+<div>Go / No-Go decision with reasoning</div>
+</div>
+<a class="btn btn-primary" href="/contact">Request Entry Evaluation</a>
+</div>
+<div class="phase-card featured">
+<div class="phase-label">Step 2 · Core</div>
+<div class="phase-title">Market Validation — Structured Phase</div>
+<div class="phase-price">$5,500</div>
+<div class="phase-timeline">Anchor · 2–3 weeks</div>
+<p class="phase-copy">For companies ready to replace assumptions with real decisions before scaling execution.</p>
+<div class="phase-list">
+<div>Deep demand validation</div>
+<div>Detailed customer segmentation</div>
+<div>Pricing validation</div>
+<div>Channel viability testing</div>
+<div>Competitor positioning analysis</div>
+<div>Market Entry Readiness Assessment</div>
+</div>
+<a class="btn btn-primary" href="/contact">Request Structured Review</a>
+</div>
+<div class="phase-card">
+<div class="phase-label">Step 3 · Scale</div>
+<div class="phase-title">US Market Entry System</div>
+<div class="phase-price">$10K+</div>
+<div class="phase-timeline">$10K–$20K+ project or $3.5K–$7K/mo retainer</div>
+<p class="phase-copy">For companies committed to controlled US expansion after validation confirms the path forward.</p>
+<div class="phase-list">
+<div>Validation → strategy → execution</div>
+<div>Go-to-market strategy development</div>
+<div>Channel launch &amp; control</div>
+<div>Ongoing decision support</div>
+<div>Performance optimization</div>
+<div>Scaling with control</div>
+</div>
+<a class="btn btn-primary" href="/contact">Discuss Full System</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="loss">
+<div class="container">
+<div class="section-label">Value Logic</div>
+<h2>The entry phase costs less than the first incorrect decision</h2>
+<p class="body-copy">Most companies do not realize the cost of wrong entry decisions until after budget is already spent. Validation moves that learning earlier.</p>
+<div class="value-band">
+<div class="value-item">
+<div class="value-number">$20K–$100K</div>
+<div class="value-text">Typical initial execution loss without validation</div>
+</div>
+<div class="value-item">
+<div class="value-number">2–6 months</div>
+<div class="value-text">Time commonly lost before the mistake becomes obvious</div>
+</div>
+<div class="value-item">
+<div class="value-number">$2,500</div>
+<div class="value-text">Entry phase to control the first decision</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section soft" id="upgrade">
+<div class="container">
+<div class="section-label">Upgrade Path</div>
+<h2>How clients move through the system</h2>
+<p class="body-copy">The upgrade path is locked. Clients move forward only when the previous decision creates enough clarity.</p>
+<div class="path-grid">
+<div class="path-step">
+
+<div>
+<h3>Entry Validation</h3>
+<p>The first controlled decision: should you continue, adjust, validate deeper, or stop?</p>
+</div>
+<div class="path-price">$2,500</div>
+</div>
+<div class="path-step">
+
+<div>
+<h3>If demand is confirmed → Structured Validation</h3>
+<p>Replace assumptions with a more complete decision map before scaling execution.</p>
+</div>
+<div class="path-price">$5,500</div>
+</div>
+<div class="path-step">
+
+<div>
+<h3>If validated → Full System Engagement</h3>
+<p>Move into strategy and execution only after validation supports the decision.</p>
+</div>
+<div class="path-price">$10K+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section dark-section" id="psychology">
+<div class="container">
+<div class="decision-wrap">
+<div class="section-label">Pricing Psychology</div>
+<h2>The model creates clean value perception and high lifetime value</h2>
+<p class="decision-intro">Entry is accessible, the anchor is clear, and scale is only offered after the decision path supports it.</p>
+<div class="pressure-cards-row">
+<div class="pressure-card">Entry: $2,500</div>
+<div class="pressure-card">Anchor: $5,500</div>
+<div class="pressure-card">Scale: $10K+</div>
+</div>
+<div class="sales-line">Start with validation before you invest further.</div>
+<div class="reality-lock">Every delay in validation increases the cost of market entry because decisions are already being made.</div>
+</div>
+</div>
+</section>
+<section class="section" id="low-friction">
+<div class="container">
+<div class="split-grid">
+<div>
+<div class="section-label">Low-Friction Entry</div>
+<h2>Not every client is ready for a call</h2>
+<div class="body-copy">
+<p>The alternative path is simple: send your product details by email. Urban Nexus reviews the case, provides initial direction, and recommends the next step.</p>
+<p>This captures hesitant users without forcing premature calls or high-pressure sales behavior.</p>
+</div>
+<div class="cta-row">
+<a class="btn btn-primary" href="mailto:info@urbannexus.ai">Send Product Details</a>
+<a class="btn btn-secondary-light" href="/contact">Use Contact Form</a>
+</div>
+</div>
+<div class="company-panel">
+<h3>We will review:</h3>
+<div class="card-grid" style="margin-top:22px;">
+<div class="card"><h3>Product</h3><p>What you sell and how it is positioned now.</p></div>
+<div class="card"><h3>Market</h3><p>Which US segment or buyer type you are considering.</p></div>
+<div class="card"><h3>Risk</h3><p>Where wrong assumptions could waste budget.</p></div>
+<div class="card"><h3>Next step</h3><p>Whether Entry Validation is the correct starting point.</p></div>
+</div>
+<div class="company-lock">This reduces friction and increases engagement without weakening the system.</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section dark-section" id="not-do">
+<div class="container">
+<div class="decision-wrap">
+<div class="section-label">What Not To Do</div>
+<h2>The pricing system stays controlled by refusing the wrong offers</h2>
+<p class="decision-intro">The model is strong because it does not fragment into cheap, unrelated services.</p>
+<div class="do-not-grid">
+<div class="do-not-item">No SEO / marketing services as entry offer</div>
+<div class="do-not-item">No cheap offers under $1,000</div>
+<div class="do-not-item">No discounts</div>
+<div class="do-not-item">No service fragmentation</div>
+</div>
+<div class="reality-lock">You are not buying execution tasks. You are buying control over market entry.</div>
+</div>
+</div>
+</section>
+<section class="section soft" id="final-model">
+<div class="container">
+<div class="section-label">Final Model</div>
+<h2>Final pricing structure</h2>
+<p class="body-copy">This table is for clarity. On the site, the pricing should be presented as a starting sequence, not as disconnected packages.</p>
+<table class="final-table">
+<thead>
+<tr>
+<th>Stage</th>
+<th>Product</th>
+<th>Price</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Entry</td>
+<td>Market Validation</td>
+<td>$2,500</td>
+<td>5–7 days</td>
+</tr>
+<tr>
+<td>Core</td>
+<td>Structured Validation</td>
+<td>$5,500</td>
+<td>2–3 weeks</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>Full System</td>
+<td>$10K+</td>
+<td>Ongoing</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section cta-section" id="contact">
+<div class="container">
+<div class="cta-panel">
+<div class="section-label">Start</div>
+<h2>Start with validation before you invest further</h2>
+<p class="body-copy">The correct next step is not to buy execution. The correct next step is to validate whether execution should happen at all.</p>
+
+
+<form class="lead-form" id="leadForm">
+<input name="source" type="hidden" value="urban-nexus-pricing"/>
+<input name="page" type="hidden" value="/pricing"/>
+<input id="utm_source" name="utm_source" type="hidden"/>
+<input id="utm_medium" name="utm_medium" type="hidden"/>
+<input id="utm_campaign" name="utm_campaign" type="hidden"/>
+<input id="utm_term" name="utm_term" type="hidden"/>
+<input id="utm_content" name="utm_content" type="hidden"/>
+<div class="form-grid">
+<input name="name" placeholder="Your name" required="" type="text"/>
+<input name="email" placeholder="Business email" required="" type="email"/>
+</div>
+<div class="form-grid">
+<input name="company" placeholder="Company name" required="" type="text"/>
+<input name="country" placeholder="Country / market" type="text"/>
+</div>
+<select name="stage" required="">
+<option value="">Current US entry stage</option>
+<option>Planning to enter the US market</option>
+<option>Need market validation before execution</option>
+<option>Comparing system, pricing, and next step</option>
+<option>Ready to request evaluation</option>
+</select>
+<textarea name="message" placeholder="What decision do you need to validate before investing in US execution?" required=""></textarea>
+<button class="btn btn-primary" type="submit">Request Evaluation</button>
+<div class="form-status" id="formStatus"></div>
+<div class="privacy-note">By submitting this form, you agree that Urban Nexus may use your information to respond to your request. We do not sell your contact information.</div>
+<div class="form-note">Prefer email? Contact Urban Nexus directly at info@urbannexus.ai</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="logo">URBAN NEXUS</div>
+<div class="footer-links">
+<div>Pricing</div>
+<div>Market Validation</div>
+<div>Structured Validation</div>
+<div>Full System</div>
+</div>
+<div class="footer-contact"><a href="mailto:info@urbannexus.ai">info@urbannexus.ai</a></div>
+</div>
+<div class="copyright">Copyright © 2026 Urban Nexus. All rights reserved.</div>
+</div>
+</footer>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach((key) => {
+    const field = document.getElementById(key);
+    if (field) field.value = params.get(key) || "";
+  });
+
+  const form = document.getElementById("leadForm");
+  const statusEl = document.getElementById("formStatus");
+
+  if (form) {
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      if (statusEl) statusEl.textContent = "Submitting your request...";
+
+      const formData = new FormData(form);
+      const payload = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch("/api/lead-validation-request", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload)
+        });
+
+        if (!response.ok) throw new Error("Submission failed");
+
+        window.location.href = "/thank-you";
+      } catch (error) {
+        if (statusEl) statusEl.textContent = "Submission could not be completed. Please email info@urbannexus.ai.";
+      }
+    });
+  }
+</script>
+</body></html>
